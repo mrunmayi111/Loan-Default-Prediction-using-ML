@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem; /* Space between the nav links and the button */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem; /* Space between each link */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.cta-btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #444;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('assets/background.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    margin-bottom: 1rem;
+}
+
+.hero-buttons .btn {
+    margin: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.secondary {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+/* About Section */
+.about {
+    background-color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.stat h4 {
+    font-size: 2rem;
+    color: #007bff;
+}
+
+/* Loan Prediction Tool */
+.form-section {
+    background-color: #fff;
+    padding: 2rem 1rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+#loanForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#loanForm input, 
+#loanForm select, 
+#loanForm button {
+    width: 80%;
+    max-width: 400px;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#loanForm button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsive Form */
+@media (max-width: 768px) {
+    #loanForm input, 
+    #loanForm select, 
+    #loanForm button {
+        width: 100%;
+    }
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .hero-buttons .btn {
+        padding: 0.6rem 1rem;
+    }
+}
