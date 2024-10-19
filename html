@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Default Prediction App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">Loan Intel</h1>
+            <nav class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+                <button class="cta-btn">Let's Talk</button>
+            </nav>
+        </div>
+    </header>
+    
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Loan Default Prediction App</h2>
+            <p>
+                Analyzing data with Machine Learning to help you make better loan decisions and predict risks accurately.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn primary">Sign Up Now</button>
+                <button class="btn secondary">Analyze Loan Data</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <h3>About Us</h3>
+        <p>
+            At Loan Intel, we specialize in helping financial institutions make smarter lending decisions by leveraging predictive data analysis to predict default risks. Our goal is to minimize risks and maximize profit, providing an efficient tool for better decision-making in today’s financial landscape.
+        </p>
+        <div class="stats">
+            <div class="stat">
+                <h4>502</h4>
+                <p>Projects Done</p>
+            </div>
+            <div class="stat">
+                <h4>10+</h4>
+                <p>Years of Experience</p>
+            </div>
+            <div class="stat">
+                <h4>273+</h4>
+                <p>Clients Served</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <h3>Loan Prediction Tool</h3>
+        <form id="loanForm">
+            <input type="number" placeholder="Annual Income" required>
+            <input type="number" placeholder="Desired Loan Amount" required>
+            <input type="number" placeholder="Credit Score" required>
+            <select required>
+                <option value="" disabled selected>Employment Status</option>
+                <option value="employed">Employed</option>
+                <option value="self-employed">Self-Employed</option>
+                <option value="unemployed">Unemployed</option>
+            </select>
+            <select required>
+                <option value="" disabled selected>Has Mortgage</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            <select required>
+                <option value="" disabled selected>Has Dependents</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            <input type="text" placeholder="Loan Purpose" required>
+            <button type="submit" class="btn primary">Check Eligibility</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
